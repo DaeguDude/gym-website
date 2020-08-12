@@ -30,7 +30,7 @@
 
 #main {
   background-color: #e5e5e5;
-  flex: 7.5 1 0;
+  flex: 8 1 0;
 }
 
 #main-container {
@@ -44,14 +44,71 @@
 }
 
 .main-container-items {
-  background: black;
+  background: blueviolet;
   width: 47.5%;
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
 }
+
+#date-template {
+  border: 1px solid black;
+
+  flex: 1 1 0;
+}
+
+#display {
+  border: 1px solid black;
+  flex: 4 1 0;
+}
+
+
+
+#number-board-display {
+  border: 1px solid black;
+
+  flex: 1 1 0;
+
+  display: flex;
+}
+
+#student-number {
+  flex: 5 1 0;
+}
+
+#enter {
+  flex: 3 1 0;
+}
+
+
+
+#number-board {
+  border: 1px solid black;
+
+  flex: 4 1 0;
+
+  padding: 10% 10%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(4, 20%);
+
+  column-gap: 5%;
+  row-gap: 5%;
+}
+
+#number-board button {
+
+}
+
+
+
+
 
 
 
 #footer {
   background-color:  #7d7d7d;
-  flex: 1 1 0;
+  flex: 0.5 1 0;
 }
