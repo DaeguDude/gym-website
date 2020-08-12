@@ -44,62 +44,110 @@
 }
 
 .main-container-items {
-  background: blueviolet;
   width: 47.5%;
   height: 100%;
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 #date-template {
-  border: 1px solid black;
 
-  flex: 1 1 0;
+  flex: 0 0 17.5%;
+
+  display: flex;
+  align-items: flex-end;
+
+  font-size: 2rem;
+  color: #3b3b3b;
 }
 
 #display {
-  border: 1px solid black;
-  flex: 4 1 0;
+  background: #fff;
+  flex: 0 0 77.5%;
+
+  padding: 5% 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#display #quote {
+  height: 50%;
+  font-size: 2.625rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#quote span {
+  padding-left: 5%;
+}
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 3rem;
+}
+
+.fa-quote-left {
+  align-self: flex-start;
+}
+
+.fa-quote-right {
+  align-self: flex-end;
+}
+
+
+
+
 
 
 
 #number-board-display {
-  border: 1px solid black;
-
-  flex: 1 1 0;
+  flex: 0 0 17.5%;
 
   display: flex;
+  justify-content: space-between;
+
 }
 
 #student-number {
-  flex: 5 1 0;
+  flex: 0 0 62.5%;
+  padding: 3%;
+
+  font-size: 1.25rem;
+
 }
 
 #enter {
-  flex: 3 1 0;
+  flex: 0 0 32.5%;
+  background: #1fc365;
+
+  font-size: 3rem;
+  font-weight: 500;
+  color: #3b3b3b
 }
 
 
 
 #number-board {
+  background: #2e3867;
   border: 1px solid black;
-
-  flex: 4 1 0;
-
-  padding: 10% 10%;
-
+  flex: 0 0 77.5%;
+  padding: 5% 10%;
   display: grid;
   grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(4, 20%);
-
+  grid-template-rows: repeat(4, 21.25%);
   column-gap: 5%;
   row-gap: 5%;
 }
 
 #number-board button {
+  font-size: 3rem;
+  font-weight: 700;
 
+  background: #fff;
 }
 
 
@@ -111,4 +159,11 @@
 #footer {
   background-color:  #7d7d7d;
   flex: 0.5 1 0;
+}
+
+
+/* MISCELLANEOUS */
+
+.border-round {
+  border-radius: 10px;
 }

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>루카스레프리코리아</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fadac8530c.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,13 +16,23 @@
     <main id="main">
       <div id="main-container">
         <div id="main-left" class="main-container-items">
-          <div id="date-template">8월 5일(수) PM 3:21:08</div>
-          <div id="display"></div>
+          <div id="date-template">
+            <span>8월 5일(수) PM 3:21:08</span>
+          </div>
+          <div id="display">
+            
+            <p id="quote">
+              <i class="fas fa-quote-left"></i>
+              <span>쉽게 얻게 되는 것은 쉽게 사라집니다. 항상 최선을 다하세요.</span>
+              <i class="fas fa-quote-right"></i>
+            </p>
+            
+          </div>
         </div>
         <div id="main-right" class="main-container-items">
           <div id="number-board-display">
-            <input type="text" id="student-number" name="student-number" placeholder="회원번호를 입력해주세요">
-            <button id="enter"></button>
+            <input type="text" id="student-number" class="border-round" name="student-number" placeholder="회원번호를 입력해주세요">
+            <button id="enter" class="border-round">확인</button>
           </div>
           <div id="number-board">
             <button id="1">1</button>
