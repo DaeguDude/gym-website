@@ -18,12 +18,13 @@ body {
 
 header {
   border: 1px solid black;
+  background: #1e2858;
   min-height: 82px;
   flex: 0 0 auto;
 }
 
 main {
-  background: yellow;
+  background: #cdcdcd;
   padding: 3.5%;
   border: 1px solid black;
   min-height: 700px;
@@ -55,9 +56,18 @@ main {
   height: 77.9%;
 }
 
+#m-left-box {
+  background: #fff;
+}
+
+#m-right-box {
+  background: #2e3867;
+}
+
 
 
 footer {
+  background: #1e2858;
   border: 1px solid black;
   min-height: 41px;
   flex: 0 0 auto;
