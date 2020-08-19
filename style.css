@@ -11,7 +11,7 @@ body {
 #container {
   border: 1px solid black;
   height: 100vh;
-
+  background: #cdcdcd;
   display: flex;
   flex-direction: column;
 }
@@ -19,17 +19,26 @@ body {
 header {
   border: 1px solid black;
   background: #1e2858;
+  padding: 0 3.5%;
   min-height: 82px;
-  flex: 0 0 auto;
+  height: 82px;
+  flex: 0 0 0;
+
+  display: flex;
+  align-items: center;
+}
+
+header #gym-title {
+  color: #fff;
+  
 }
 
 main {
   background: #cdcdcd;
-  padding: 3.5%;
   border: 1px solid black;
   min-height: 700px;
   flex: 1 0 auto;
-
+  padding: 3.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,14 +73,20 @@ main {
   background: #2e3867;
 }
 
-
-
 footer {
   background: #1e2858;
+  padding: 0 3.5%;
   border: 1px solid black;
+  color: #fff;
   min-height: 41px;
-  flex: 0 0 auto;
+  height: 41px;
+  flex: 0 0 0;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+
 
 
 
