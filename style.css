@@ -9,7 +9,6 @@ body {
 }
 
 #container {
-  border: 1px solid black;
   height: 100vh;
   background: #cdcdcd;
   display: flex;
@@ -17,7 +16,6 @@ body {
 }
 
 header {
-  border: 1px solid black;
   background: #1e2858;
   padding: 0 3.5%;
   min-height: 82px;
@@ -35,7 +33,6 @@ header #gym-title {
 
 main {
   background: #cdcdcd;
-  border: 1px solid black;
   min-height: 700px;
   flex: 1 0 auto;
   padding: 3.5%;
@@ -45,7 +42,6 @@ main {
 }
 
 .main-box {
-  border: 1px solid black;
   height: 93.5%;
   width: 48.1%;
 
@@ -55,13 +51,11 @@ main {
 
 #m-left-box-top,
 #m-right-box-top {
-  border: 1px solid black;
   height: 22.1%;
 }
 
 #m-left-box-bottom,
 #m-right-box-bottom {
-  border: 1px solid black;
   height: 77.9%;
 }
 
@@ -81,59 +75,49 @@ main {
 
 #m-left-box-bottom {
   display: flex;
-  justify-content: center;
-  align-items: top;
-} 
-
-#m-left-box-bottom #quote {
-  border: 1px solid black;
-  background: #7ed98d;
-  width:72.9%;
-  height: 76.8%;
-  margin-top: 10px;
-  border-radius: 15%;
-
-  display: flex;
   flex-direction: column;
 }
 
-.quote-items {
-  border: 1px solid black;
-}
-
-.material-icons {
-  font-size: 123px;
-}
-
-.material-icons.md-100 { font-size: 100px; }
-.material-icons.md-light { color: #fff; }
-
-#quote-top,
-#quote-bottom {
-  height: 30%;
+#attendance-confirm {
+  height: 50%;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-#quote-top .material-icons {
-  transform: rotate(180deg);
-}
-
-#quote-middle {
-  height: 40%;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#quote-middle p {
-  width: 80%;
-  font-size: 1.875rem;
+#attendance-confirm .material-icons {
+  flex: 1 0 0;
   text-align: center;
 }
+#attendance-confirm .material-icons.md-115 { font-size: 115px; }
+#attendance-confirm .material-icons.md-green { color: #35a533; }
+
+#attendance-confirm #student-welcome {
+  flex: 1 0 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 108px;
+}
+
+#student-details {
+  height: 50%;
+  padding: 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  
+}
+
+#student-details #student-belt,
+#student-details #student-finish-date {
+  font-size: 1.5rem;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+
 
 
 
@@ -207,7 +191,6 @@ main {
 footer {
   background: #1e2858;
   padding: 0 3.5%;
-  border: 1px solid black;
   color: #fff;
   min-height: 41px;
   height: 41px;
