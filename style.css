@@ -8,8 +8,22 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+button {
+  outline: none;
+}
+
+button:active {
+  border: none;
+  transform: scale(0.93);
+}
+
+input:focus {
+  border: 2px solid #0b00ff;
+  outline: none;
+}
+
+
 #container {
-  border: 1px solid black;
   height: 100vh;
   background: #cdcdcd;
   display: flex;
@@ -17,7 +31,6 @@ body {
 }
 
 header {
-  border: 1px solid black;
   background: #1e2858;
   padding: 0 3.5%;
   min-height: 82px;
@@ -35,7 +48,6 @@ header #gym-title {
 
 main {
   background: #cdcdcd;
-  border: 1px solid black;
   min-height: 700px;
   flex: 1 0 auto;
   padding: 3.5%;
@@ -45,7 +57,6 @@ main {
 }
 
 .main-box {
-  border: 1px solid black;
   height: 93.5%;
   width: 48.1%;
 
@@ -55,13 +66,11 @@ main {
 
 #m-left-box-top,
 #m-right-box-top {
-  border: 1px solid black;
   height: 22.1%;
 }
 
 #m-left-box-bottom,
 #m-right-box-bottom {
-  border: 1px solid black;
   height: 77.9%;
 }
 
@@ -82,58 +91,24 @@ main {
 #m-left-box-bottom {
   display: flex;
   justify-content: center;
-  align-items: top;
-} 
-
-#m-left-box-bottom #quote {
-  border: 1px solid black;
-  background: #7ed98d;
-  width:72.9%;
-  height: 76.8%;
-  margin-top: 10px;
-  border-radius: 15%;
-
-  display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-.quote-items {
-  border: 1px solid black;
-}
-
-.material-icons {
-  font-size: 123px;
-}
-
-.material-icons.md-100 { font-size: 100px; }
-.material-icons.md-light { color: #fff; }
-
-#quote-top,
-#quote-bottom {
-  height: 30%;
+#m-left-box-bottom #daily-quote-box {
+  width: 62.6%;
+  height: 50%;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#quote-top .material-icons {
-  transform: rotate(180deg);
-}
-
-#quote-middle {
-  height: 40%;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#quote-middle p {
-  width: 80%;
+#daily-quote {
   font-size: 1.875rem;
-  text-align: center;
+  color: #696868;
+  text-align: center;  
 }
+
 
 
 
@@ -198,16 +173,9 @@ main {
   font-size: 2.5rem;
 }
 
-
-
-
-
-
-
 footer {
   background: #1e2858;
   padding: 0 3.5%;
-  border: 1px solid black;
   color: #fff;
   min-height: 41px;
   height: 41px;
