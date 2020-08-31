@@ -1,4 +1,6 @@
 import { Student } from '../student/student.js';
+import { beforeCheck } from '../beforeCheck.js';
+import { afterCheck } from '../afterCheck.js';
 
 const displayController = (() => {
   // 확인버튼
@@ -37,21 +39,28 @@ const displayController = (() => {
     })
   }
 
+  const showBeforeCheckDisplay = () => {
+    let mLeftBox = document.getElementById('m-left-box');
+    mLeftBox.appendChild(beforeCheck());
+  }
+
+  const showAfterCheckDisplay = () => {
+    let mLeftBox = document.getElementById('m-left-box');
+    mLeftBox.appendChild(afterCheck());
+  }
+
   return {
+    showBeforeCheckDisplay,
+    showAfterCheckDisplay,
     enableNumSubmitBtn,
     enableNumBtns
   }
 
 })();
 
+displayController.showAfterCheckDisplay();
+
 displayController.enableNumSubmitBtn();
 displayController.enableNumBtns();
-
-
-Student.makeStudent('김상학', '남자', '29', '01049931290', '대구광역시 달서구 도원동 311동 506호');
-Student.makeStudent('박경환', '남자', '33', '01038819804', '대구광역시 달서구 성서');
-Student.makeStudent('윤길상', '남자', '33', '01077461153', '대구광역시 달서구 옥포');
-Student.makeStudent('이승철', '남자', '28', '01068880063', '대구광역시 달서구 상인동');
-Student.makeStudent('오득원', '남자', '29', '01041204839', '대구광역시 달서구 월배 2차 아이파크');
 
 console.log(Student.getAllStudents());

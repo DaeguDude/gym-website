@@ -78,9 +78,6 @@ Student.makeStudent('윤길상', '남자', '33', '01077461153', '대구광역시
 Student.makeStudent('이승철', '남자', '28', '01068880063', '대구광역시 달서구 상인동');
 Student.makeStudent('오득원', '남자', '29', '01041204839', '대구광역시 달서구 월배 2차 아이파크');
 
-
-console.log(Student.getStudentName('1290'));
-
-// export { Student };
+export { Student };
 
 
