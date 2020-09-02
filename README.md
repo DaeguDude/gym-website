@@ -240,3 +240,17 @@ The Odin Project 디스코드에 질문을 한 결과, 보통 HTML과 아주 최
 
 - 모든 속성을 추가한 학생 객체를 만들어라
 
+## 09/02
+
+### 오늘의 리뷰
+
+- 작업시간
+> 17:00~19:00
+
+- 오늘 한 일
+> 회원등록 페이지 디자인 완성
+
+## 09/03
+
+- 해야 할 일
+> 회원 등록페이지를 HTML로 구현, 구현하기 전에, TOP에 [responsive design](https://www.theodinproject.com/courses/html-and-css/lessons/responsive-design) 한 번 볼 것
