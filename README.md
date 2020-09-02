@@ -240,3 +240,22 @@ The Odin Project 디스코드에 질문을 한 결과, 보통 HTML과 아주 최
 
 - 모든 속성을 추가한 학생 객체를 만들어라
 
+### TODAY REVIEW
+
+- 작업시간
+> 13:30~15:30 (3 pomodoro)
+
+- 내일 해야 할 일
+> 모든 속성을 추가한 학생 객체 만들기 - 속성마다 set,get함수 다 만들어주기
+
+## 09/02
+
+### TODAY REVIEW
+
+[회원을 등록하는 페이지](https://www.figma.com/file/VvXHGyKhj05vyZ3jMG4tS9/lucaslepriGym?node-id=24%3A92)를 만들었다
+
+이제 내가 하여야 할 것은, 이것을 통해 등록을 할 때 Student 모듈과 연결시켜, 새로운 학생을 생성해주는 것이다.
+
+먼저 하여야 할 것은
+- HTML로 회원등록 페이지를 만들자.
+
