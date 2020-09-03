@@ -265,3 +265,10 @@ The Odin Project 디스코드에 질문을 한 결과, 보통 HTML과 아주 최
 > [Build a responsvie website with HTML & CSS TUTORIAL](https://www.youtube.com/watch?v=ZeDP-rzOnAA)
 > 
 
+- 이제 해야 할 것
+> 실제로, 테이블을 만들어보자
+
+## 09/04
+
+- 테이블 만들기(만들때 항상 Brad의 naming방식 참조하자)
+
