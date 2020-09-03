@@ -8,184 +8,51 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-button {
-  outline: none;
-}
-
-button:active {
-  border: none;
-  transform: scale(0.93);
-}
-
-input:focus {
-  border: 2px solid #0b00ff;
-  outline: none;
-}
-
-
-#container {
-  height: 100vh;
-  background: #cdcdcd;
-  display: flex;
-  flex-direction: column;
-}
-
 header {
-  background: #1e2858;
-  padding: 0 3.5%;
-  min-height: 82px;
-  height: 82px;
-  flex: 0 0 0;
-
   display: flex;
+  background: #1e2858;
+  height: 10vh;
+  padding: 0 5%;
   align-items: center;
-}
-
-header #gym-title {
-  color: #fff;
   
 }
 
-main {
-  background: #cdcdcd;
-  min-height: 700px;
-  flex: 1 0 auto;
-  padding: 3.5%;
+.title-container,
+.nav-links,
+.logout-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.main-box {
-  height: 93.5%;
-  width: 48.1%;
-
-  display: flex;
-  flex-direction: column;
+.title-container {
+  flex: 1;
 }
 
-#m-left-box-top,
-#m-right-box-top {
-  height: 22.1%;
-}
-
-#m-left-box-bottom,
-#m-right-box-bottom {
-  height: 77.9%;
-}
-
-#m-left-box {
-  background: #fff;
-}
-
-#m-left-box-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#m-left-box-top #date-time {
-  font-size: 1.5rem;
-}
-
-#m-left-box-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#m-left-box-bottom #daily-quote-box {
-  width: 62.6%;
-  height: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#daily-quote {
-  font-size: 1.875rem;
-  color: #696868;
-  text-align: center;  
-}
-
-
-
-
-
-
-
-
-#m-right-box {
-  background: #2e3867;
-}
-
-#m-right-box-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#m-right-box-top #student-num {
-  height: 62%;
-  width: 52.5%;
-  border-radius: 20px;
-
-  padding-left: 5%;
-  font-size: 1.25rem;
-}
-
-#m-right-box-top #num-submit-btn {
-  background: #2ecc71;
-  height: 62%;
-  width: 27%;
-  border-radius: 20px;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-#m-right-box-bottom {
-  display: flex;
-  justify-content: center;
-}
-
-#main-num-btns {
-  height: 100%;
-  padding-top: 10px; 
-  
-
-  display: grid;
-  grid-template-rows: repeat(4, 81px);
-  grid-template-columns: repeat(3, 117px);
-  row-gap: 26px;
-  column-gap: 46px;
-}
-
-.main-btn-items {
-  border-radius: 20px;
-
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-/* 지움 */
-.main-btn-items:last-child {
-  font-size: 2.5rem;
-}
-
-footer {
-  background: #1e2858;
-  padding: 0 3.5%;
+.title {
   color: #fff;
-  min-height: 41px;
-  height: 41px;
-  flex: 0 0 0;
+}
 
-  display: flex;
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.logout-container {
+  flex: 1;
+  
   justify-content: flex-end;
-  align-items: center;
 }
 
-
-
-
+.logout {
+  color: #fff;
+  font-size: 24px;
+}
