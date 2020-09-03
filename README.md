@@ -254,3 +254,14 @@ The Odin Project 디스코드에 질문을 한 결과, 보통 HTML과 아주 최
 
 - 해야 할 일
 > 회원 등록페이지를 HTML로 구현, 구현하기 전에, TOP에 [responsive design](https://www.theodinproject.com/courses/html-and-css/lessons/responsive-design) 한 번 볼 것
+
+### TODAY REVIEW
+
+- 작업시간
+> 08:00~10:20(4 pomodoro)
+
+- 오늘 한 일
+> Responsive Design에 대해 알아보기
+> [Build a responsvie website with HTML & CSS TUTORIAL](https://www.youtube.com/watch?v=ZeDP-rzOnAA)
+> 
+
