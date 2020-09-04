@@ -56,3 +56,23 @@ nav {
   color: #fff;
   font-size: 24px;
 }
+
+/* 메인 */
+main {
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-container {
+  background: lightblue;
+  width: 90%;
+  height: 90%;
+
+}
+
+.user-info-table {
+  background: lightsalmon;
+}

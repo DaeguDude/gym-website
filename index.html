@@ -9,6 +9,8 @@
   <title>루카스레프리코리아</title>
 </head>
 <body>
+
+  <!-- 헤더시작 -->
   <header>
     
     <div class="title-container">
@@ -27,7 +29,96 @@
       <a class="logout" href="#"><i class="fas fa-sign-out-alt"></i></a>
     </div>
   </header>
-  <main></main>
-  <footer></footer>
+  
+  <!-- 메인시작! -->
+  <main>
+    <div id="table-container">
+      <table class="user-info-table">
+        <tr name="id">
+          <th>이름</th>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr name="date-of-birth">
+          <th>생년월일</th>
+          <td><input type="date" name="date-of-birth"></td>
+        </tr>
+
+        <tr>
+          <th>성별</th>
+          <td>
+            <input type="radio" name="gender">여자
+            <input type="radio" name="gender">남자
+          </td>
+        </tr>
+
+        <tr>
+          <th>휴대폰 번호</th>
+          <td>
+            <input type="tel" maxlength='3'> -
+            <input type="tel" maxlength='4'> - 
+            <input type="tel" maxlength='4'>
+          </td>
+        </tr>
+
+        <tr>
+          <th>주소</th>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <th>벨트/그랄</th>
+          <td>
+            <select name="belt">
+              <option value="벨트">벨트</option>
+              <option value="화이트">화이트</option>
+              <option value="블루">블루</option>
+              <option value="퍼플">퍼플</option>
+              <option value="브라운">브라운</option>
+              <option value="블랙">블랙</option>
+            </select>   
+
+            <select name="stripe">
+              <option value="stripe">그랄</option>
+              <option value="one">1그랄</option>
+              <option value="two">2그랄</option>
+              <option value="three">3그랄</option>
+              <option value="four">4그랄</option>
+            </select>  
+          </td>
+        </tr>
+
+        <tr>
+          <th>시작날짜</th>
+          <td><input type="date" name="start-date"></td>
+        </tr>
+
+        <tr>
+          <th>끝나는날짜</th>
+          <td><input type="date" name="finish-date"></td>
+        </tr>
+      </table>
+
+      <button class="submit-btn">회원 등록하기</button>
+    </div>
+  </main>
+
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th>Telephone:</th>
+    <td>555 77 854</td>
+  </tr>
+  <tr>
+    <th>Telephone:</th>
+    <td>555 77 855</td>
+  </tr>
+
+  <!-- 푸터시작! -->
+  <footer>
+
+  </footer>
 </body>
 </html>

@@ -242,7 +242,7 @@ The Odin Project 디스코드에 질문을 한 결과, 보통 HTML과 아주 최
 
 ### TODAY REVIEW
 
-- 작업시간
+- 작업시간q
 > 13:30~15:30 (3 pomodoro)
 
 - 내일 해야 할 일
