@@ -1,4 +1,4 @@
-const Student = () => {
+const StudentFactory = () => {
   // 이름, 생년월일, 성별, 연락처, 주소, 벨트, 그랄, 등록일, 남은 날짜
   let _name;
   let _dateOfBirth;
@@ -107,5 +107,5 @@ const Student = () => {
   }
 } 
 
-
+export { StudentFactory };
 

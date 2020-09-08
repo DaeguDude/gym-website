@@ -259,3 +259,32 @@ The Odin Project 디스코드에 질문을 한 결과, 보통 HTML과 아주 최
 먼저 하여야 할 것은
 - HTML로 회원등록 페이지를 만들자.
 
+
+## 09/07
+
+### TODAY REVIEW
+
+- 작업시간(18:00~19:00)
+
+지금, array.every를 통해 값이 누락이 된 것이 있는지 없는지 확인하고 있는중.
+
+## 09/08
+
+### I'm Working on...
+
+- ~~array.every를 통해 누락된 값이 있는지 확인~~
+- 어떻게 한 모듈의 정보를 다른 모듈의 정보에 넘길 것인가?
+    - Pubsub을 써야하나?
+    - [Creating & Triggering Events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
+    - Just try not to use other components function as much as possible. BUT USE IT IF YOU THINK YOU NEED TO USE.
+
+### TODAY REVIEW
+
+- 작업시간 (20:15~22:00)
+- 오늘의 작업일지
+> 어떻게 한 모듈의 정보를 다른 모듈의 정보에 넘길 것인가?
+
+Just try not to use other components function as much as possible. BUT USE IT IF YOU THINK YOU NEED TO USE.
+
+지금은, 일단 다른 모듈의 펑션에 약간 의존을 하면서, 코드를 작성해나가겠다. 이렇게 하면 조금 더 스피드가 날 것 같다.
+

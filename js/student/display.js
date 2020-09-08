@@ -1,3 +1,6 @@
+import { StudentFactory } from './studentFactory.js';
+import { Student } from './student.js';
+
 const Display = (() => {
   let userInfoTable = document.querySelector('.user-info-table');
 
@@ -11,27 +14,26 @@ const Display = (() => {
     // let stripe = getStripe();
     // let startDate = getStartDate();
     // let finishDate = getFinishDate();
-    let studentInfo = [];
-    studentInfo.push(getUserName());
-    studentInfo.push(getDateOfBirth());
-    studentInfo.push(getGender());
-    studentInfo.push(getContact());
-    studentInfo.push(getAddress());
-    studentInfo.push(getBelt());
-    studentInfo.push(getStripe());
-    studentInfo.push(getStartDate());
-    studentInfo.push(getFinishDate());
-
-
-    // every를 통하여 테스트를 통과하는지 안 통과하는지 만들 것이다.
-    // 내가 체크해야할 것은,
-    // 1. "" 인지? 값이 비어있음
-    // 2. undefined 인지? 값이 비어있음
-
-    // 이 두 개중 그 어느것도 없다면, 값이 다 제대로 들어있는거라 말할 수 있다.
-    studentInfo.every( info => (info != '' || info != undefined) );
+    let student = StudentFactory();
+    student.setName(getUserName());
+    student.setDateOfBirth(getDateOfBirth());
+    student.setGender(getGender());
+    student.setContact(getContact());
+    student.setAddress(getAddress());
+    student.setBelt(getBelt());
+    student.setStripe(getStripe());
+    student.setStartDate(getStartDate());
+    student.setFinishDate(getFinishDate());
     
-    
+    Student.addStudent(student);
+  }
+
+  const doesArrayHaveEmptyString = (arr) => {
+
+  }
+
+  const doesArrayHaveUndefined = (arr) => {
+
   }
 
   // 회원 등록하기 버튼이 클릭되면, 클릭이 되었는지 안 되었는지를 아는 이벤트 리스터 추가
@@ -125,4 +127,4 @@ const Display = (() => {
   }
 })();
 
-Display.addRegisterStudentEvent();
+export { Display };
