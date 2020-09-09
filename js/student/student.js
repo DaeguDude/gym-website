@@ -5,6 +5,7 @@ const Student = (() => {
   
   const addStudent = (student) => {
     students.push(student);
+    console.log(student)
   }
 
   const getAllStudents = () => {

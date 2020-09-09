@@ -4,42 +4,73 @@ import { Student } from './student.js';
 const Display = (() => {
   let userInfoTable = document.querySelector('.user-info-table');
 
-  const registerStudent = () => {
-    // let name = getUserName();
-    // let dateOfBirth = getDateOfBirth();
-    // let gender = getGender();
-    // let contact = getContact();
-    // let address = getAddress();
-    // let belt = getBelt();
-    // let stripe = getStripe();
-    // let startDate = getStartDate();
-    // let finishDate = getFinishDate();
-    let student = StudentFactory();
-    student.setName(getUserName());
-    student.setDateOfBirth(getDateOfBirth());
-    student.setGender(getGender());
-    student.setContact(getContact());
-    student.setAddress(getAddress());
-    student.setBelt(getBelt());
-    student.setStripe(getStripe());
-    student.setStartDate(getStartDate());
-    student.setFinishDate(getFinishDate());
+  const getAllUserInfo = () => {
+    let studentInfo = [];
+    studentInfo.push(getUserName());
+    studentInfo.push(getDateOfBirth());
+    studentInfo.push(getGender());
+    studentInfo.push(getAddress());
+    studentInfo.push(getBelt());
+    studentInfo.push(getStripe());
+    studentInfo.push(getStartDate());
+    studentInfo.push(getFinishDate());
     
-    Student.addStudent(student);
+    return studentInfo;
   }
 
-  const doesArrayHaveEmptyString = (arr) => {
-
+  const checkMissingValue = (arr) => {
+    let isMissing = !( arr.every(elem => (elem != '' && elem != undefined)) );
+    return isMissing;
   }
 
-  const doesArrayHaveUndefined = (arr) => {
+  const makeStudent = (studentInfo) => {
+    let student = StudentFactory();
+    
+    let name = studentInfo[0];
+    let dateOfBirth = studentInfo[1];
+    let gender = studentInfo[2];
+    let contact = studentInfo[3];
+    let address = studentInfo[4];
+    let belt = studentInfo[5];
+    let stripe = studentInfo[6];
+    let startDate = studentInfo[7];
+    let finishDate = studentInfo[8];
+    
+    student.setName(name);
+    student.setDateOfBirth(dateOfBirth);
+    student.setGender(gender);
+    student.setContact(contact);
+    student.setAddress(address);
+    student.setBelt(belt);
+    student.setStripe(stripe);
+    student.setStartDate(startDate);
+    student.setFinishDate(finishDate);
 
+    return student;
   }
+
+  const addStudent = () => {
+    // 배열로 정보를 받음. 아직 값이 누락된게 있는지 알 수 없다.
+    let studentInfo = getAllUserInfo();
+    // 누락된 값을 체크함
+    let isMissingSth = checkMissingValue(studentInfo);
+
+    if (isMissingSth) {
+      // 누락된 값이 있다면, 값을 다 채워넣으라고 해줌
+    } else {
+      // 누락된 값이 없으면 학생을 추가해줌
+      let student = makeStudent(studentInfo);
+      Student.addStudent(student);
+    }
+  }
+
+
+
 
   // 회원 등록하기 버튼이 클릭되면, 클릭이 되었는지 안 되었는지를 아는 이벤트 리스터 추가
-  const addRegisterStudentEvent = () => {
+  const addStudentEvent = () => {
     let registerBtn = document.querySelector('.table-container .submit-btn');
-    registerBtn.addEventListener('click', registerStudent);
+    registerBtn.addEventListener('click', addStudent);
   }
 
 
@@ -122,8 +153,7 @@ const Display = (() => {
     getStartDate,
     getFinishDate,
 
-    addRegisterStudentEvent,
-    registerStudent
+    addStudentEvent
   }
 })();
 
