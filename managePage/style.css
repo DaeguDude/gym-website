@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  background: #1e2858;
+  height: 10vh;
+  padding: 0 5%;
+  align-items: center;
+  
+}
+
+.title-container,
+.nav-links,
+.logout-container {
+  display: flex;
+}
+
+.title-container {
+  flex: 1;
+}
+
+.title {
+  color: #fff;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.logout-container {
+  flex: 1;
+  
+  justify-content: flex-end;
+}
+
+.logout {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* 메인 */
+main {
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  background: lightblue;
+  width: 90%;
+  height: 90%;
+
+}
+
+.student-list-table {
+  background: lightsalmon;
+  
+}
+
+.student-list-table tr th{
+  width: 100px;
+}
+

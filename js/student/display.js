@@ -64,9 +64,6 @@ const Display = (() => {
     }
   }
 
-
-
-
   // 회원 등록하기 버튼이 클릭되면, 클릭이 되었는지 안 되었는지를 아는 이벤트 리스터 추가
   const addStudentEvent = () => {
     let registerBtn = document.querySelector('.table-container .submit-btn');
