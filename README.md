@@ -307,5 +307,14 @@ Just try not to use other components function as much as possible. BUT USE IT IF
 
 디자인이면 디자인, 기능이면 기능. 그런 것들을 다 구현을 하고 나서 개발을 하는게 맞는 듯 싶다..
 
+## 09/10
+
+OKAY. BriggsE의 조언에 따라 잠시 주짓수 홈페이지 개발을 멈춘다. 잠시 멈춰두는 것이지, 다시 완성을 할 것이다.
+
+이것을 멈추기 전에, 회원등록페이지의 CSS는 완성을 하고 멈출 것이다.
+내일도 똑같이 이것을 해야지.
+
+
+
 
 

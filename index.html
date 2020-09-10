@@ -32,73 +32,92 @@
   
   <!-- 메인시작! -->
   <main>
+    <span class="register-std-txt">회원등록</span>
     <div class="table-container">
       <table class="user-info-table">
-        <tr name="id">
+        <tr>
           <th>이름</th>
           <td><input type="text"></td>
         </tr>
 
-        <tr name="date-of-birth">
+        <tr>
           <th>생년월일</th>
-          <td><input type="date" name="date-of-birth"></td>
+          <td>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+          </td>
         </tr>
 
         <tr>
           <th>성별</th>
           <td>
-            <input type="radio" name="gender">여자
-            <input type="radio" name="gender">남자
+            <input type="radio" id="male" name="gender">
+            <label for="male">남자</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">여자</label>
           </td>
         </tr>
 
         <tr>
           <th>휴대폰 번호</th>
           <td>
-            <input type="tel" maxlength='3'> -
-            <input type="tel" maxlength='4'> - 
-            <input type="tel" maxlength='4'>
+            <input type="tel"> -
+            <input type="tel"> -
+            <input type="tel">
           </td>
         </tr>
 
         <tr>
           <th>주소</th>
-          <td><input type="text"></td>
+          <td>
+            <input type="text">
+          </td>
         </tr>
 
         <tr>
           <th>벨트/그랄</th>
           <td>
-            <select name="belt">
-              <option value="벨트">벨트</option>
-              <option value="화이트">화이트</option>
-              <option value="블루">블루</option>
-              <option value="퍼플">퍼플</option>
-              <option value="브라운">브라운</option>
-              <option value="블랙">블랙</option>
-            </select>   
+            <select name="belt" id="belt">
+              <option value="belt">벨트</option>
+              <option value="belt">화이트</option>
+              <option value="belt">블루</option>
+              <option value="belt">퍼플</option>
+              <option value="belt">브라운</option>
+              <option value="belt">블랙</option>
+            </select>
 
-            <select name="stripe">
+            <select name="stripe" id="stripe">
               <option value="stripe">그랄</option>
               <option value="one">1그랄</option>
               <option value="two">2그랄</option>
               <option value="three">3그랄</option>
               <option value="four">4그랄</option>
-            </select>  
+            </select>
           </td>
         </tr>
 
         <tr>
           <th>시작날짜</th>
-          <td><input type="date" name="start-date"></td>
+          <td>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+          </td>
         </tr>
 
         <tr>
           <th>끝나는날짜</th>
-          <td><input type="date" name="finish-date"></td>
+          <td>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+          </td>
         </tr>
       </table>
+    </div>
 
+    <div class="btn-container">
       <button class="submit-btn">회원 등록하기</button>
     </div>
   </main>
